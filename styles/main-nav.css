@@ -1,9 +1,9 @@
 .pfp {
   position: absolute;
-  align-self: flex-start;
+  top: 5%;
 }
 
 .nav {
   position: absolute;
-  align-self: center;
+  top: 15%;
 }
