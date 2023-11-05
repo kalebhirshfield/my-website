@@ -18,7 +18,7 @@ import { BotIcon, HomeIcon, InfoIcon, MenuIcon } from "lucide-react";
 
 export function HamburgerMenu() {
   return (
-    <>
+    <div className="header">
       <Avatar className="pfp">
         <AvatarImage
           src="https://avatars.githubusercontent.com/u/108481836?v=4"
@@ -69,7 +69,7 @@ export function HamburgerMenu() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-    </>
+    </div>
   );
 }
 
