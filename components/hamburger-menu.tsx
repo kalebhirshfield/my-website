@@ -16,7 +16,7 @@ import {
 import "@/styles/main-nav.css";
 import { BotIcon, HomeIcon, InfoIcon, MenuIcon } from "lucide-react";
 
-export function NavBar() {
+export function HamburgerMenu() {
   return (
     <>
       <Avatar className="pfp">
