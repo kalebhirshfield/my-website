@@ -7,10 +7,15 @@
 .pfp {
   position: absolute;
   align-self: flex-start;
+  margin-left: 6rem;
 }
 
 .nav {
   position: absolute;
   align-self: flex-start;
-  margin-left: 4rem;
+}
+
+.title {
+  position: absolute;
+  margin-left: 10rem;
 }

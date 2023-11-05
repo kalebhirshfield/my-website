@@ -69,6 +69,9 @@ export function HamburgerMenu() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight title">
+        Kaleb
+      </h1>
     </div>
   );
 }
