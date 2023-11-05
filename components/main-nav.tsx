@@ -15,32 +15,36 @@ import {
   NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import "@/styles/main-nav.css";
 
 export function NavBar() {
   return (
     <>
-      <Avatar>
-        <AvatarImage src="@/public/avatar.png" alt="Kaleb Hirshfield" />
+      <Avatar className="pfp">
+        <AvatarImage
+          src="https://avatars.githubusercontent.com/u/108481836?v=4"
+          alt="Kaleb Hirshfield"
+        />
         <AvatarFallback>KH</AvatarFallback>
       </Avatar>
-      <NavigationMenu>
+      <NavigationMenu className="nav">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="https://kalebhirshfield.com/" legacyBehavior passHref>
+            <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Home
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="https://kalebhirshfield.com/" legacyBehavior passHref>
+            <Link href="/projects" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Projects
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="https://kalebhirshfield.com/" legacyBehavior passHref>
+            <Link href="/about" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 About
               </NavigationMenuLink>
