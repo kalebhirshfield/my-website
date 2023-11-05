@@ -18,7 +18,7 @@ export default function Home() {
             Studying Computer Science, Physics and Maths . . .
           </h2>
         </div>
-        <Footer></Footer>
+        <Footer />
       </main>
     </RootLayout>
   );
