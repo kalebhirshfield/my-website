@@ -12,6 +12,7 @@ import {
   NavigationMenuContent,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { ModeToggle } from "./theme-toggle";
 import "@/styles/main-nav.css";
 import { BotIcon, HomeIcon, InfoIcon, MenuIcon } from "lucide-react";
 
@@ -63,6 +64,7 @@ export function HamburgerMenu() {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
+                <ModeToggle />
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
