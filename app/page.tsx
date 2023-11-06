@@ -6,7 +6,7 @@ import "@/styles/page.css";
 export default function Home() {
   return (
     <RootLayout>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="flex min-h-screen flex-col items-center justify-between p-8">
         <HamburgerMenu />
         <div className="heading2">
           <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">

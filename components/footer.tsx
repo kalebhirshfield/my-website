@@ -6,29 +6,29 @@ import "@/styles/footer.css";
 export function Footer() {
   return (
     <div>
-      <Button variant="outline" size="icon" className="button">
-        <Link href="https://github.com/kalebhirshfield" legacyBehavior passHref>
+      <Link href="https://github.com/kalebhirshfield" legacyBehavior passHref>
+        <Button variant="outline" size="icon" className="button">
           <GithubIcon className="h-4 w-4" />
-        </Link>
-      </Button>
-      <Button variant="outline" size="icon" className="button">
-        <Link
-          href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
-          legacyBehavior
-          passHref
-        >
+        </Button>
+      </Link>
+      <Link
+        href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
+        legacyBehavior
+        passHref
+      >
+        <Button variant="outline" size="icon" className="button">
           <LinkedinIcon className="h-4 w-4" />
-        </Link>
-      </Button>
-      <Button variant="outline" size="icon" className="button">
-        <Link
-          href="https://www.instagram.com/kalebhirshfield/"
-          legacyBehavior
-          passHref
-        >
+        </Button>
+      </Link>
+      <Link
+        href="https://www.instagram.com/kalebhirshfield/"
+        legacyBehavior
+        passHref
+      >
+        <Button variant="outline" size="icon" className="button">
           <InstagramIcon className="h-4 w-4" />
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </div>
   );
 }
