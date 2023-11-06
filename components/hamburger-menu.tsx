@@ -59,7 +59,7 @@ export function HamburgerMenu() {
                       className={navigationMenuTriggerStyle()}
                     >
                       <InfoIcon className="p-1" />
-                      Info
+                      About
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
