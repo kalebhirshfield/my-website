@@ -13,20 +13,19 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "./theme-toggle";
-import "@/styles/main-nav.css";
 import { BotIcon, HomeIcon, InfoIcon, MenuIcon } from "lucide-react";
 
-export function HamburgerMenu() {
+export function NavBar() {
   return (
-    <div className="header">
-      <Avatar className="pfp">
+    <div className="static p-10">
+      <Avatar className="absolute ml-24">
         <AvatarImage
           src="https://avatars.githubusercontent.com/u/108481836?v=4"
           alt="Kaleb Hirshfield"
         />
         <AvatarFallback>KH</AvatarFallback>
       </Avatar>
-      <NavigationMenu className="nav">
+      <NavigationMenu className="absolute">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>
@@ -70,7 +69,7 @@ export function HamburgerMenu() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight title">
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight ml-40">
         Kaleb
       </h1>
     </div>

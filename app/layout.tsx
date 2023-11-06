@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/theme-toggle";
+import { NavBar } from "@/components/navigation-bar";
+import { Footer } from "@/components/footer";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,11 +26,13 @@ export default function RootLayout({
       <body className={fontSans.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
+          <NavBar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

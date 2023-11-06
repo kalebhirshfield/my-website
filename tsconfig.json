@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/hamburger-menu.tsx"
+    "components/navigation-bar.tsx"
   ],
   "exclude": ["node_modules"]
 }
