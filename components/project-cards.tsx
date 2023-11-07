@@ -14,7 +14,7 @@ import { Badge } from "./ui/badge";
 
 export function ProjectCards() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2">
       <Card className="m-5">
         <Image
           src="/solarx.png"
