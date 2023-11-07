@@ -48,9 +48,15 @@ export function ProjectCards() {
           </p>
         </CardContent>
         <CardFooter>
-          <Badge>Python</Badge>
-          <Badge>Raspberry Pi</Badge>
-          <Badge>Competition</Badge>
+          <Link href="https://www.python.org/">
+            <Badge className="cursor-default">Python</Badge>
+          </Link>
+          <Link href="https://www.raspberrypi.org/">
+            <Badge className="cursor-default">Raspberry Pi</Badge>
+          </Link>
+          <Link href="https://www.paconsulting.com/culture/pa-in-the-community/raspberry-pi-competition-uk">
+            <Badge className="cursor-default">Competition</Badge>
+          </Link>
         </CardFooter>
       </Card>
       <Card className="m-5">
@@ -63,12 +69,8 @@ export function ProjectCards() {
         />
         <CardHeader>
           <CardTitle>
-            ChatGPT-UI
-            <Link
-              href="https://github.com/kalebhirshfield/chatgpt-ui"
-              legacyBehavior
-              passHref
-            >
+            ChatGPT UI
+            <Link href="https://github.com/kalebhirshfield/chatgpt-ui">
               <Button variant="link" size="icon">
                 <GithubIcon className="h-4 w-4" />
               </Button>
@@ -83,9 +85,15 @@ export function ProjectCards() {
           </p>
         </CardContent>
         <CardFooter>
-          <Badge>Python</Badge>
-          <Badge>Flet</Badge>
-          <Badge>GPT-3.5</Badge>
+          <Link href="https://www.python.org/">
+            <Badge className="cursor-default">Python</Badge>
+          </Link>
+          <Link href="https://flet.dev/">
+            <Badge className="cursor-default">Flet</Badge>
+          </Link>
+          <Link href="https://openai.com/">
+            <Badge className="cursor-default">GPT-3.5</Badge>
+          </Link>
         </CardFooter>
       </Card>
     </div>

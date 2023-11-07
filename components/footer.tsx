@@ -5,7 +5,7 @@ import "@/styles/footer.css";
 
 export function Footer() {
   return (
-    <div>
+    <div className="flex justify-center pb-3">
       <Link href="https://github.com/kalebhirshfield" legacyBehavior passHref>
         <Button variant="outline" size="icon" className="button">
           <GithubIcon className="h-4 w-4" />

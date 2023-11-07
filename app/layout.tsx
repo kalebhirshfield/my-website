@@ -30,8 +30,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavBar />
-          {children}
+          <div className="min-h-[90dvh]">
+            <NavBar />
+            {children}
+          </div>
           <Footer />
         </ThemeProvider>
       </body>

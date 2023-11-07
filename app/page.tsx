@@ -1,8 +1,6 @@
-import { Footer } from "@/components/footer";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8">
+    <main className="flex flex-col items-center justify-between p-8">
       <div className="relative self-center pb-20">
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Studying Computer Science, Physics and Maths . . .
