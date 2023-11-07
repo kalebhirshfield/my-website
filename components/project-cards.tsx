@@ -21,7 +21,7 @@ export function ProjectCards() {
           alt="solarx-icon"
           width={1000}
           height={1000}
-          className="rounded-t-md min-w-full"
+          className="rounded-t-lg min-w-full"
         />
         <CardHeader>
           <CardTitle>
@@ -65,7 +65,7 @@ export function ProjectCards() {
           alt="solarx-icon"
           width={1000}
           height={1000}
-          className="rounded-t-md min-w-full"
+          className="rounded-t-lg min-w-full"
         />
         <CardHeader>
           <CardTitle>
