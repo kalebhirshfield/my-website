@@ -15,13 +15,13 @@ import { Badge } from "./ui/badge";
 export function ProjectCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <Card className="m-5">
+      <Card className="m-5 hover:m-2 transition-all">
         <Image
           src="/solarx.png"
           alt="solarx-icon"
           width={1000}
           height={1000}
-          className="rounded-t-lg min-w-full"
+          className="rounded-t-lg min-w-full "
         />
         <CardHeader>
           <CardTitle>
@@ -59,7 +59,7 @@ export function ProjectCards() {
           </Link>
         </CardFooter>
       </Card>
-      <Card className="m-5">
+      <Card className="m-5 hover:m-2 transition-all">
         <Image
           src="/chatgpt.jpg"
           alt="solarx-icon"
