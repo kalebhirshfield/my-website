@@ -32,7 +32,7 @@ export default function Home() {
           computer science in year 13.
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center">
-          I&apos;m interested in programming, space and looooove a nice car.
+          I&apos;m interested in programming, space and love car racing.
           &#128663;
         </p>
       </div>

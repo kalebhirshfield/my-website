@@ -10,7 +10,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "lucide-react";
-import { Badge } from "./ui/badge";
 
 export function ProjectCards() {
   return (
