@@ -38,8 +38,7 @@ export function NavBar() {
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
-                      <HomeIcon className="p-1" />
-                      Home
+                      &#128075; Home
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -48,8 +47,7 @@ export function NavBar() {
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
-                      <InfoIcon className="p-1" />
-                      About
+                      &#128170; About
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -58,12 +56,10 @@ export function NavBar() {
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
-                      <BotIcon className="p-1" />
-                      Projects
+                      &#128526; Projects
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-
                 <ModeToggle />
               </ul>
             </NavigationMenuContent>
