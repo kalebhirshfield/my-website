@@ -13,7 +13,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "./theme-toggle";
-import { BotIcon, HomeIcon, InfoIcon, MenuIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 
 export function NavBar() {
   return (
