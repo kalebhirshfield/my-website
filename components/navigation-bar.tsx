@@ -34,7 +34,7 @@ export function NavBar() {
             <NavigationMenuContent>
               <ul className="p-6">
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
+                  <Link href="/">
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
@@ -44,17 +44,7 @@ export function NavBar() {
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/projects" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      <BotIcon className="p-1" />
-                      Projects
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/about" legacyBehavior passHref>
+                  <Link href="/#about">
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
@@ -63,6 +53,17 @@ export function NavBar() {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/#projects">
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      <BotIcon className="p-1" />
+                      Projects
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+
                 <ModeToggle />
               </ul>
             </NavigationMenuContent>

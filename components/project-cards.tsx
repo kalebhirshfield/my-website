@@ -15,7 +15,7 @@ import { Badge } from "./ui/badge";
 export function ProjectCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <Card className="m-5 hover:m-2 transition-all">
+      <Card className="m-5">
         <Image
           src="/solarx.png"
           alt="solarx-icon"
@@ -26,11 +26,7 @@ export function ProjectCards() {
         <CardHeader>
           <CardTitle>
             Solar X
-            <Link
-              href="https://github.com/JaVelin-Team/SolarX"
-              legacyBehavior
-              passHref
-            >
+            <Link href="https://github.com/JaVelin-Team/SolarX">
               <Button variant="link" size="icon">
                 <GithubIcon className="h-4 w-4" />
               </Button>
@@ -47,19 +43,8 @@ export function ProjectCards() {
             your home.
           </p>
         </CardContent>
-        <CardFooter>
-          <Link href="https://www.python.org/">
-            <Badge className="cursor-default">Python</Badge>
-          </Link>
-          <Link href="https://www.raspberrypi.org/">
-            <Badge className="cursor-default">Raspberry Pi</Badge>
-          </Link>
-          <Link href="https://www.paconsulting.com/culture/pa-in-the-community/raspberry-pi-competition-uk">
-            <Badge className="cursor-default">Competition</Badge>
-          </Link>
-        </CardFooter>
       </Card>
-      <Card className="m-5 hover:m-2 transition-all">
+      <Card className="m-5">
         <Image
           src="/chatgpt.jpg"
           alt="solarx-icon"
@@ -84,17 +69,6 @@ export function ProjectCards() {
             GPT-3.5 chat bot.
           </p>
         </CardContent>
-        <CardFooter>
-          <Link href="https://www.python.org/">
-            <Badge className="cursor-default">Python</Badge>
-          </Link>
-          <Link href="https://flet.dev/">
-            <Badge className="cursor-default">Flet</Badge>
-          </Link>
-          <Link href="https://openai.com/">
-            <Badge className="cursor-default">GPT-3.5</Badge>
-          </Link>
-        </CardFooter>
       </Card>
     </div>
   );
