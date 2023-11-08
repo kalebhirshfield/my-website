@@ -34,22 +34,22 @@ export function NavBar() {
             <NavigationMenuContent>
               <ul className="p-6">
                 <NavigationMenuItem>
-                  <Link href="/">
+                  <a href="/">
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
                       &#128075; Home
                     </NavigationMenuLink>
-                  </Link>
+                  </a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/#about">
+                  <a href="/#about">
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
                       &#128170; About
                     </NavigationMenuLink>
-                  </Link>
+                  </a>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/#projects">

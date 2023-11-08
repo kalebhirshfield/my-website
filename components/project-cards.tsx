@@ -2,7 +2,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -13,8 +12,8 @@ import { GithubIcon } from "lucide-react";
 
 export function ProjectCards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
-      <Card className="m-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 min-h-[75dvh]">
+      <Card className="m-5 hover:m-1 transition-all">
         <Image
           src="/solarx.png"
           alt="solarx-icon"
@@ -43,7 +42,7 @@ export function ProjectCards() {
           </p>
         </CardContent>
       </Card>
-      <Card className="m-5">
+      <Card className="m-5 hover:m-1 transition-all">
         <Image
           src="/chatgpt.jpg"
           alt="solarx-icon"
