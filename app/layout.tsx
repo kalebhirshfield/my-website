@@ -31,10 +31,14 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-[90dvh]">
-            <NavBar />
+            <section className="snap-start">
+              <NavBar />
+            </section>
             {children}
           </div>
-          <Footer />
+          <section className="snap-start">
+            <Footer />
+          </section>
         </ThemeProvider>
       </body>
     </html>

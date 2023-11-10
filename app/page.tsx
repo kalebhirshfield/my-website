@@ -5,11 +5,9 @@ export default function Home() {
     <main id="/" className="flex flex-col justify-center p-8 cursor-default">
       <div className="flex justify-center text-center pb-56">
         <h2 className="grid scroll-m-20 pb-2 text-3xl md:text-6xl xl:text-8xl font-semibold tracking-tight first:mt-0">
-          <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold">
-              Hi, I&apos;m Kaleb. &#128075;
-            </p>
-          </section>
+          <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
+            Hi, I&apos;m Kaleb. &#128075;
+          </p>
           <a
             href="#about"
             className="text-xl md:text-3xl min-h-[80dvh] opacity-40 hover:opacity-100 transition-all"
@@ -17,29 +15,29 @@ export default function Home() {
             &#128071;
           </a>
           <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold">
+            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
               Studying . . .
             </p>
           </section>
           <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold">
+            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
               Computer Science &#128187;
             </p>
           </section>
           <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold">
+            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
               Physics &#128640;
             </p>
           </section>
           <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold">
+            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
               Maths &#129518;
             </p>
           </section>
         </h2>
       </div>
       <div id="about" className="min-h-[60dvh] snap-center">
-        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0">
+        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 transition-all">
           About Me &#128170;
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center">
@@ -57,8 +55,8 @@ export default function Home() {
       >
         &#128070;
       </a>
-      <div id="projects" className="snap-center">
-        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[20dvh]">
+      <div id="projects">
+        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh] transition-all">
           Projects &#128526;
         </h2>
         <ProjectCards />
