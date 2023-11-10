@@ -56,7 +56,7 @@ export default function Home() {
         &#128070;
       </a>
       <div id="projects">
-        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh] transition-all">
+        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh]">
           Projects &#128526;
         </h2>
         <ProjectCards />

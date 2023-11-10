@@ -36,7 +36,7 @@ export default function RootLayout({
             </section>
             {children}
           </div>
-          <section className="snap-start">
+          <section>
             <Footer />
           </section>
         </ThemeProvider>
