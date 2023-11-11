@@ -31,7 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-[90dvh]">
-            <section className="snap-start">
+            <section id="/" className="snap-start">
               <NavBar />
             </section>
             {children}

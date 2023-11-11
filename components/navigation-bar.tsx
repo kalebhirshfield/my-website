@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -18,13 +17,6 @@ import { MenuIcon } from "lucide-react";
 export function NavBar() {
   return (
     <div className="static p-10">
-      <Avatar className="absolute ml-24">
-        <AvatarImage
-          src="https://avatars.githubusercontent.com/u/108481836?v=4"
-          alt="Kaleb Hirshfield"
-        />
-        <AvatarFallback>KH</AvatarFallback>
-      </Avatar>
       <NavigationMenu className="absolute">
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -66,9 +58,12 @@ export function NavBar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight ml-40">
-        Kaleb
-      </h1>
+      <a
+        href="#about"
+        className="flex justify-center text-xl md:text-3xl opacity-40 hover:opacity-100 transition-all"
+      >
+        &#128071;
+      </a>
     </div>
   );
 }

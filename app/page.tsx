@@ -2,21 +2,15 @@ import { ProjectCards } from "@/components/project-cards";
 
 export default function Home() {
   return (
-    <main id="/" className="flex flex-col justify-center p-8 cursor-default">
+    <main className="flex flex-col justify-center p-8 cursor-default">
       <div className="flex justify-center text-center pb-56">
         <h2 className="grid scroll-m-20 pb-2 text-3xl md:text-6xl xl:text-8xl font-semibold tracking-tight first:mt-0">
           <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
             Hi, I&apos;m Kaleb. &#128075;
           </p>
-          <a
-            href="#about"
-            className="text-xl md:text-3xl min-h-[80dvh] opacity-40 hover:opacity-100 transition-all"
-          >
-            &#128071;
-          </a>
           <section className="snap-center">
             <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
-              Studying . . .
+              Studying...
             </p>
           </section>
           <section className="snap-center">
@@ -56,7 +50,7 @@ export default function Home() {
         &#128070;
       </a>
       <div id="projects">
-        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh]">
+        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh] snap-start">
           Projects &#128526;
         </h2>
         <ProjectCards />
