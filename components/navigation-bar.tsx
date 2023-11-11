@@ -59,7 +59,7 @@ export function NavBar() {
         </NavigationMenuList>
       </NavigationMenu>
       <a
-        href="#about"
+        href="#projects"
         className="flex justify-center text-xl md:text-3xl opacity-40 hover:opacity-100 transition-all"
       >
         &#128071;

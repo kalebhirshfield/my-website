@@ -30,7 +30,7 @@ export default function Home() {
           </section>
         </h2>
       </div>
-      <div id="about" className="min-h-[60dvh] snap-center">
+      <div id="about" className="py-64 snap-center">
         <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 transition-all">
           About Me &#128170;
         </h2>
@@ -43,18 +43,18 @@ export default function Home() {
           &#128663;
         </p>
       </div>
+      <div id="projects" className="py-64">
+        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh] snap-center">
+          Projects &#128526;
+        </h2>
+        <ProjectCards />
+      </div>
       <a
         href="#/"
         className="text-xl md:text-3xl min-h-[40dvh] opacity-40 hover:opacity-100 transition-all flex justify-center"
       >
         &#128070;
       </a>
-      <div id="projects">
-        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh] snap-start">
-          Projects &#128526;
-        </h2>
-        <ProjectCards />
-      </div>
     </main>
   );
 }

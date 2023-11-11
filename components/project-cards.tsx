@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "lucide-react";
 
@@ -14,13 +13,6 @@ export function ProjectCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <Card className="m-5 hover:m-1 transition-all snap-start">
-        <Image
-          src="/solarx.png"
-          alt="solarx-icon"
-          width={1000}
-          height={1000}
-          className="rounded-t-lg min-w-full "
-        />
         <CardHeader>
           <CardTitle>
             Solar X
@@ -43,13 +35,6 @@ export function ProjectCards() {
         </CardContent>
       </Card>
       <Card className="m-5 hover:m-1 transition-all snap-start">
-        <Image
-          src="/chatgpt.jpg"
-          alt="solarx-icon"
-          width={1000}
-          height={1000}
-          className="rounded-t-lg min-w-full"
-        />
         <CardHeader>
           <CardTitle>
             ChatGPT UI
