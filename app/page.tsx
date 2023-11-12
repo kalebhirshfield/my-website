@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center p-8 cursor-default">
-      <div className="relative self-center min-h-[90dvh] scroll-m-20 pb-2 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 transition-all p-24 xl:px-60">
+      <div className="relative self-center min-h-[90dvh] scroll-m-20 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 pt-20 transition-all xl:px-60">
         <div className="flex flex-row justify-between pb-4">
           <p>Kaleb</p>
           <p>Hirshfield</p>
