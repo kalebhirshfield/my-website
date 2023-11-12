@@ -58,12 +58,6 @@ export function NavBar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-      <a
-        href="#projects"
-        className="flex justify-center text-xl md:text-3xl opacity-40 hover:opacity-100 transition-all"
-      >
-        &#128071;
-      </a>
     </div>
   );
 }

@@ -3,7 +3,6 @@ import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavBar } from "@/components/navigation-bar";
-import { Footer } from "@/components/footer";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -21,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth snap-y snap-mandatory">
+    <html lang="en" className="scroll-smooth snap-y snap-proximity">
       <head />
       <body className={fontSans.className}>
         <ThemeProvider
@@ -36,9 +35,6 @@ export default function RootLayout({
             </section>
             {children}
           </div>
-          <section>
-            <Footer />
-          </section>
         </ThemeProvider>
       </body>
     </html>

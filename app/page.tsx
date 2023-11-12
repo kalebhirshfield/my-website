@@ -1,50 +1,58 @@
 import { ProjectCards } from "@/components/project-cards";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-center p-8 cursor-default">
-      <div className="flex justify-center text-center pb-56">
-        <h2 className="grid scroll-m-20 pb-2 text-3xl md:text-6xl xl:text-8xl font-semibold tracking-tight first:mt-0">
-          <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
-            Hi, I&apos;m Kaleb. &#128075;
-          </p>
-          <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
-              Studying...
-            </p>
-          </section>
-          <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
-              Computer Science &#128187;
-            </p>
-          </section>
-          <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
-              Physics &#128640;
-            </p>
-          </section>
-          <section className="snap-center">
-            <p className="py-64 text-5xl md:text-7xl xl:text-9xl font-extrabold transition-all">
-              Maths &#129518;
-            </p>
-          </section>
-        </h2>
+      <div className=" min-h-[90dvh] scroll-m-20 pb-2 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 transition-all p-24 xl:px-60">
+        <div className="flex flex-row justify-between pb-4">
+          <p>Kaleb</p>
+          <p>Hirshfield</p>
+        </div>
+        <div className="flex flex-row justify-between pb-4">
+          <p>A</p>
+          <p>Level</p>
+          <p>Student</p>
+        </div>
+        <div className="flex flex-row justify-between pb-4">
+          <p>Computing</p>
+          <p>Physics</p>
+        </div>
+        <div className="flex flex-row justify-between pb-4">
+          <p>And</p>
+          <p>Maths</p>
+        </div>
+        <div className="flex flex-row justify-between pb-4">
+          <Link
+            href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
+            className="flex flex-row justify-between pb-4 opacity-50 hover:opacity-100 hover:text-2xl hover:md:text-8xl hover:xl:text-9xl transition-all"
+          >
+            <p>&#128073;</p>
+            <p>LinkedIn</p>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
+            className="flex flex-row justify-between pb-4 opacity-50 hover:opacity-100 hover:text-2xl hover:md:text-8xl hover:xl:text-9xl transition-all"
+          >
+            <p>&#128073;</p>
+            <p>GitHub</p>
+          </Link>
+        </div>
       </div>
-      <div id="about" className="py-64 snap-center">
+      <div id="about" className="py-64 snap-center min-h-[80dvh]">
         <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 transition-all">
           About Me &#128170;
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center">
-          I&apos;m Kaleb, a Jewish A Level student studying maths, physics and
-          computer science in year 13.
+          I&apos;m Kaleb, a year 13 student.
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center">
           I&apos;m interested in programming, space and love car racing.
           &#128663;
         </p>
       </div>
-      <div id="projects" className="py-64">
-        <h2 className="flex justify-center scroll-m-20 pb-2 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 min-h-[10dvh] snap-center">
+      <div id="projects" className="snap-center pb-28">
+        <h2 className="flex justify-center scroll-m-20 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 animate-bounce min-h-[10dvh]">
           Projects &#128526;
         </h2>
         <ProjectCards />
