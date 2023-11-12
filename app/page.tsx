@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center p-8 cursor-default">
-      <div className=" min-h-[90dvh] scroll-m-20 pb-2 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 transition-all p-24 xl:px-60">
+      <div className="relative self-center min-h-[90dvh] scroll-m-20 pb-2 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 transition-all p-24 xl:px-60">
         <div className="flex flex-row justify-between pb-4">
           <p>Kaleb</p>
           <p>Hirshfield</p>
@@ -51,18 +51,18 @@ export default function Home() {
           &#128663;
         </p>
       </div>
-      <div id="projects" className="snap-center pb-28">
+      <div id="projects" className="relative self-center snap-center pb-28">
         <h2 className="flex justify-center scroll-m-20 text-3xl md:text-6xl font-semibold tracking-tight first:mt-0 animate-bounce min-h-[10dvh]">
           Projects &#128526;
         </h2>
         <ProjectCards />
+        <a
+          href="#/"
+          className="text-xl md:text-3xl opacity-40 hover:opacity-100 transition-all flex justify-center pt-9"
+        >
+          &#128070;
+        </a>
       </div>
-      <a
-        href="#/"
-        className="text-xl md:text-3xl min-h-[40dvh] opacity-40 hover:opacity-100 transition-all flex justify-center"
-      >
-        &#128070;
-      </a>
     </main>
   );
 }
