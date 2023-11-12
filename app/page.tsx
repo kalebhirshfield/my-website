@@ -4,23 +4,23 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col justify-center p-8 cursor-default">
-      <div className="relative self-center min-h-[90dvh] scroll-m-20 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 pt-20 transition-all xl:px-60">
-        <div className="flex flex-row justify-between pb-4">
-          <p>Kaleb</p>
-          <p>Hirshfield</p>
+      <div className="relative self-center min-h-[90dvh] scroll-m-20 text-1xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 pt-20 transition-all">
+        <div className="flex justify-between pb-4">
+          <p>KALEB</p>
+          <p>HIRSHFIELD</p>
         </div>
         <div className="flex flex-row justify-between pb-4">
           <p>A</p>
-          <p>Level</p>
-          <p>Student</p>
+          <p>LEVEL</p>
+          <p>STUDENT</p>
         </div>
         <div className="flex flex-row justify-between pb-4">
-          <p>Computing</p>
-          <p>Physics</p>
+          <p>COMPUTER</p>
+          <p>SCIENCE</p>
         </div>
         <div className="flex flex-row justify-between pb-4">
-          <p>And</p>
-          <p>Maths</p>
+          <p>PHYSICS</p>
+          <p>MATHS</p>
         </div>
         <div className="flex flex-row justify-between pb-4">
           <Link

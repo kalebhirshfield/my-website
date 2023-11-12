@@ -12,7 +12,7 @@ import { GithubIcon } from "lucide-react";
 export function ProjectCards() {
   return (
     <div className="md:grid-cols-2 max-w-prose">
-      <Card className="m-5 hover:m-1 transition-all">
+      <Card className="mx-5 hover:mx-1 mb-5 transition-all">
         <CardHeader>
           <CardTitle>
             Solar X
@@ -32,9 +32,22 @@ export function ProjectCards() {
             financial overview of the addition of a set area of solar panels in
             your home.
           </p>
+          <br />
+          <p>
+            Makes full utilisation of the Raspberry Pi&apos;s GPIO pins to
+            create a product which can convert light intensity on the surface of
+            an LDR to power output, allowing for the calculation of the ROI you
+            could make by installing solar panels.
+          </p>
+          <br />
+          <p>
+            Finalist product of the 2023 national PA Raspberry Pi Challenge:
+            &quot;Develop a solution in response to the theme - accelerating
+            energy transition.&quot;
+          </p>
         </CardContent>
       </Card>
-      <Card className="m-5 hover:m-1 transition-all">
+      <Card className="mx-5 hover:mx-1 transition-all">
         <CardHeader>
           <CardTitle>
             ChatGPT UI
