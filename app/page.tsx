@@ -25,14 +25,14 @@ export default function Home() {
         <div className="flex flex-row justify-between pb-4">
           <Link
             href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
-            className="flex flex-row justify-between pb-4 opacity-50 hover:opacity-100 hover:text-2xl hover:md:text-5xl hover:lg:text-7xl hover:xl:text-8xl hover:2xl:text-9xl transition-all"
+            className="flex flex-row justify-between px-5 pb-4 opacity-50 hover:opacity-100 hover:px-1 transition-all"
           >
             <p>&#128073;</p>
             <p>LinkedIn</p>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
-            className="flex flex-row justify-between pb-4 opacity-50 hover:opacity-100 hover:text-2xl hover:md:text-5xl hover:lg:text-7xl hover:xl:text-8xl hover:2xl:text-9xl transition-all"
+            href="https://github.com/kalebhirshfield"
+            className="flex flex-row justify-between px-5 pb-4 opacity-50 hover:opacity-100 hover:px-1 transition-all"
           >
             <p>&#128073;</p>
             <p>GitHub</p>
