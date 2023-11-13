@@ -11,8 +11,8 @@ import { GithubIcon } from "lucide-react";
 
 export function ProjectCards() {
   return (
-    <div className="md:grid-cols-2 max-w-prose">
-      <Card className="mx-5 hover:mx-1 mb-5 transition-all">
+    <div className="max-w-prose">
+      <Card className="mx-5 mb-5 snap-center">
         <CardHeader>
           <CardTitle>
             Solar X
@@ -47,7 +47,7 @@ export function ProjectCards() {
           </p>
         </CardContent>
       </Card>
-      <Card className="mx-5 hover:mx-1 transition-all">
+      <Card className="mx-5 snap-center">
         <CardHeader>
           <CardTitle>
             ChatGPT UI
