@@ -34,15 +34,24 @@ export function ProjectCards() {
           </p>
           <br />
           <p>
-            Makes full utilisation of the Raspberry Pi&apos;s GPIO pins to
-            create a product which can convert light intensity on the surface of
-            an LDR to power output, allowing for the calculation of the ROI you
-            could make by installing solar panels.
+            Makes full utilisation of the{" "}
+            <Link href="https://www.raspberrypi.com" className="animate-pulse">
+              Raspberry Pi&apos;s
+            </Link>{" "}
+            GPIO pins to create a product which can convert light intensity on
+            the surface of an LDR to power output, allowing for the calculation
+            of the ROI you could make by installing solar panels.
           </p>
           <br />
           <p>
-            Finalist product of the 2023 national PA Raspberry Pi Challenge:
-            &quot;Develop a solution in response to the theme - accelerating
+            Finalist product of the 2023 national{" "}
+            <Link
+              href="https://www.paconsulting.com/culture/pa-in-the-community/raspberry-pi-competition-uk"
+              className="animate-pulse"
+            >
+              PA Raspberry Pi Challenge
+            </Link>
+            : &quot;Develop a solution in response to the theme - accelerating
             energy transition.&quot;
           </p>
         </CardContent>
@@ -61,7 +70,11 @@ export function ProjectCards() {
         </CardHeader>
         <CardContent>
           <p>
-            A Flet-based user interface for GPT-3.5. Allows users to chat with a
+            A{" "}
+            <Link href="flet.dev" className="animate-pulse">
+              Flet
+            </Link>
+            -based user interface for GPT-3.5. Allows users to chat with a
             GPT-3.5 chat bot.
           </p>
         </CardContent>
@@ -76,12 +89,57 @@ export function ProjectCards() {
               </Button>
             </Link>
           </CardTitle>
-          <CardDescription>Stock and order management system.</CardDescription>
+          <CardDescription>Stock and Order Management System</CardDescription>
         </CardHeader>
         <CardContent>
           <p>
             My A Level non-exam assessment project. A stock and order management
-            system for a client.
+            system for a client. Connects to a serverless postgres database
+            using{" "}
+            <Link href="neon.tech" className="animate-pulse">
+              Neon
+            </Link>{" "}
+            for the backend. Uses the{" "}
+            <Link href="flet.dev" className="animate-pulse">
+              Flet
+            </Link>{" "}
+            UI framework for the frontend to allow for a responsive and
+            intuitive user interface which is compatible with both desktop and
+            mobile devices. .
+          </p>
+        </CardContent>
+      </Card>
+      <Card className="m-5 snap-center">
+        <CardHeader>
+          <CardTitle>
+            This Website
+            <Link href="https://github.com/kalebhirshfield/my-website">
+              <Button variant="link" size="icon">
+                <GithubIcon className="h-4 w-4" />
+              </Button>
+            </Link>
+          </CardTitle>
+          <CardDescription>React Website Built With Next.js </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p>
+            My personal website built using technolgies such as{" "}
+            <Link href="https://tailwindcss.com/" className="animate-pulse">
+              tailwind
+            </Link>
+            ,{" "}
+            <Link href="react.dev" className="animate-pulse">
+              react
+            </Link>
+            ,{" "}
+            <Link href="nextjs.org" className="animate-pulse">
+              nextjs
+            </Link>{" "}
+            and{" "}
+            <Link href="https://ui.shadcn.com/" className="animate-pulse">
+              shadcn/ui
+            </Link>
+            .
           </p>
         </CardContent>
       </Card>

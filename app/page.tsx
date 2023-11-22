@@ -44,7 +44,7 @@ export default function Home() {
           About Me &#128170;
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center">
-          I&apos;m Kaleb, a year 13 student.
+          I&apos;m Kaleb, a year 13 student. ✡️
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6 text-2xl text-center">
           I&apos;m interested in programming, space and love car racing.
