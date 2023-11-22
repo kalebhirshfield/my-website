@@ -12,7 +12,7 @@ import { GithubIcon } from "lucide-react";
 export function ProjectCards() {
   return (
     <div className="max-w-prose">
-      <Card className="mx-5 mb-5 snap-center">
+      <Card className="m-5 snap-center">
         <CardHeader>
           <CardTitle>
             Solar X
@@ -47,7 +47,7 @@ export function ProjectCards() {
           </p>
         </CardContent>
       </Card>
-      <Card className="mx-5 snap-center">
+      <Card className="m-5 snap-center">
         <CardHeader>
           <CardTitle>
             ChatGPT UI
@@ -63,6 +63,25 @@ export function ProjectCards() {
           <p>
             A Flet-based user interface for GPT-3.5. Allows users to chat with a
             GPT-3.5 chat bot.
+          </p>
+        </CardContent>
+      </Card>
+      <Card className="m-5 snap-center">
+        <CardHeader>
+          <CardTitle>
+            A Level NEA Project
+            <Link href="https://github.com/kalebhirshfield/calibre-data-manager">
+              <Button variant="link" size="icon">
+                <GithubIcon className="h-4 w-4" />
+              </Button>
+            </Link>
+          </CardTitle>
+          <CardDescription>Stock and order management system.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p>
+            My A Level non-exam assessment project. A stock and order management
+            system for a client.
           </p>
         </CardContent>
       </Card>
