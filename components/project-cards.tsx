@@ -12,7 +12,7 @@ import { GithubIcon } from "lucide-react";
 export function ProjectCards() {
   return (
     <div className="max-w-prose">
-      <Card className="m-5 snap-center">
+      <Card className="m-5">
         <CardHeader>
           <CardTitle>
             Solar X
@@ -56,7 +56,7 @@ export function ProjectCards() {
           </p>
         </CardContent>
       </Card>
-      <Card className="m-5 snap-center">
+      <Card className="m-5">
         <CardHeader>
           <CardTitle>
             ChatGPT UI
@@ -79,7 +79,7 @@ export function ProjectCards() {
           </p>
         </CardContent>
       </Card>
-      <Card className="m-5 snap-center">
+      <Card className="m-5">
         <CardHeader>
           <CardTitle>
             A Level NEA Project
@@ -109,7 +109,7 @@ export function ProjectCards() {
           </p>
         </CardContent>
       </Card>
-      <Card className="m-5 snap-center">
+      <Card className="m-5">
         <CardHeader>
           <CardTitle>
             This Website

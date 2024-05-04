@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth snap-y snap-proximity">
+    <html lang="en" className="scroll-smooth">
       <head />
       <body className={fontSans.className}>
         <ThemeProvider
@@ -30,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-[90dvh]">
-            <section id="/" className="snap-start">
+            <section id="/">
               <NavBar />
             </section>
             {children}
