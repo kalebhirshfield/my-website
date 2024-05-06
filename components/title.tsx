@@ -19,11 +19,11 @@ export function Title() {
       </div>
       <TypeAnimation
         sequence={[
-          "Studying A Level Computing",
+          "Studying Computing",
           1000,
-          "Studying A Level Maths",
+          "Studying Maths",
           1000,
-          "Studying A Level Physics",
+          "Studying Physics",
           1000,
         ]}
         speed={50}
