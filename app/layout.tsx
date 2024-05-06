@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { NavBar } from "@/components/navigation-bar";
+import { ModeToggle } from "@/components/theme-toggle";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -30,9 +30,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-[90dvh]">
-            <section id="/">
-              <NavBar />
-            </section>
+            <div className="p-8">
+              <ModeToggle />
+            </div>
             {children}
           </div>
         </ThemeProvider>
