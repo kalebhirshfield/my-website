@@ -30,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="min-h-[90dvh]">
-            <div className="p-8">
+            <div className="pt-8">
               <ModeToggle />
             </div>
             {children}
