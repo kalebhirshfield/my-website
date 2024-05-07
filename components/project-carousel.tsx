@@ -23,7 +23,7 @@ export function ProjectCarousel() {
         opts={{
           align: "start",
         }}
-        className="w-3/4 max-w-screen-md"
+        className="w-3/4 sm:max-w-screen-xs md:max-w-screen-md lg:max-w-screen-lg"
       >
         <CarouselContent className="-ml-1">
           <CarouselItem key={1} className="md:basis-1/2 lg:basis-1/3">
