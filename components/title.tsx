@@ -13,19 +13,12 @@ const Name = () => {
 
 export function Title() {
   return (
-    <div className="relative justify-center min-h-[30dvh] px-14 pb-14 scroll-m-20 text-2xl md:text-4xl lg:text-6xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 pt-20 transition-all">
+    <div className="relative justify-center min-h-[30dvh] px-14 pb-14 scroll-m-20 text-4xl lg:text-6xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 pt-20 transition-all">
       <div className="flex justify-start">
         <Name />
       </div>
       <TypeAnimation
-        sequence={[
-          "Studying Computing",
-          1000,
-          "Studying Maths",
-          1000,
-          "Studying Physics",
-          1000,
-        ]}
+        sequence={["Computing", 1000, "Maths", 1000, "Physics", 1000]}
         speed={50}
         repeat={Infinity}
         style={{ fontSize: "1.5rem" }}
