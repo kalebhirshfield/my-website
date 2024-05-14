@@ -4,14 +4,14 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/theme-toggle";
 
-export const fontSans = FontSans({
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
   title: "Kaleb Hirshfield",
-  description: "Kaleb Hirshfield's personal website",
+  description: "See what I'm up to.",
 };
 
 export default function RootLayout({
