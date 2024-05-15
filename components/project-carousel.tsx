@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -15,6 +17,42 @@ import {
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "lucide-react";
+import { useScramble } from "use-scramble";
+import { Kode_Mono } from "next/font/google";
+
+const kodeMono = Kode_Mono({ subsets: ["latin"] });
+
+const SolarX = () => {
+  const { ref, replay } = useScramble({
+    text: "Solar X",
+    speed: 0.3,
+  });
+  return <p ref={ref} onMouseOver={replay} />;
+};
+
+const GPTUI = () => {
+  const { ref, replay } = useScramble({
+    text: "GPT UI",
+    speed: 0.3,
+  });
+  return <p ref={ref} onMouseOver={replay} />;
+};
+
+const NEA = () => {
+  const { ref, replay } = useScramble({
+    text: "A Level NEA",
+    speed: 0.3,
+  });
+  return <p ref={ref} onMouseOver={replay} />;
+};
+
+const Website = () => {
+  const { ref, replay } = useScramble({
+    text: "Website",
+    speed: 0.3,
+  });
+  return <p ref={ref} onMouseOver={replay} />;
+};
 
 export function ProjectCarousel() {
   return (
@@ -31,18 +69,17 @@ export function ProjectCarousel() {
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <CardHeader>
-                    <CardTitle>
-                      Solar X
-                      <Link href="https://github.com/JaVelin-Team/SolarX">
-                        <Button variant="link" size="icon">
-                          <GithubIcon className="h-4 w-4" />
-                        </Button>
-                      </Link>
+                    <CardTitle className={kodeMono.className}>
+                      <SolarX />
                     </CardTitle>
                     <CardDescription>
-                      Solar Panel Finance - 2023 PA Raspberry Pi Challenge
-                      Finalist
+                      Solar panel finance assistant.
                     </CardDescription>
+                    <Link href="https://github.com/JaVelin-Team/SolarX">
+                      <Button variant="link" size="icon">
+                        <GithubIcon className="h-4 w-4" />
+                      </Button>
+                    </Link>
                   </CardHeader>
                 </CardContent>
               </Card>
@@ -53,17 +90,17 @@ export function ProjectCarousel() {
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <CardHeader>
-                    <CardTitle>
-                      GPT UI
-                      <Link href="https://github.com/kalebhirshfield/chatgpt-ui">
-                        <Button variant="link" size="icon">
-                          <GithubIcon className="h-4 w-4" />
-                        </Button>
-                      </Link>
+                    <CardTitle className={kodeMono.className}>
+                      <GPTUI />
                     </CardTitle>
                     <CardDescription>
-                      GPT-3.5 Chat Bot User Interface
+                      Talk to an LLM using my user interface.
                     </CardDescription>
+                    <Link href="https://github.com/kalebhirshfield/chatgpt-ui">
+                      <Button variant="link" size="icon">
+                        <GithubIcon className="h-4 w-4" />
+                      </Button>
+                    </Link>
                   </CardHeader>
                 </CardContent>
               </Card>
@@ -74,17 +111,17 @@ export function ProjectCarousel() {
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <CardHeader>
-                    <CardTitle>
-                      A Level NEA Project
-                      <Link href="https://github.com/kalebhirshfield/calibre-data-manager">
-                        <Button variant="link" size="icon">
-                          <GithubIcon className="h-4 w-4" />
-                        </Button>
-                      </Link>
+                    <CardTitle className={kodeMono.className}>
+                      <NEA />
                     </CardTitle>
                     <CardDescription>
-                      Stock and Order Management System
+                      Stock and order management system.
                     </CardDescription>
+                    <Link href="https://github.com/kalebhirshfield/calibre-data-manager">
+                      <Button variant="link" size="icon">
+                        <GithubIcon className="h-4 w-4" />
+                      </Button>
+                    </Link>
                   </CardHeader>
                 </CardContent>
               </Card>
@@ -95,17 +132,17 @@ export function ProjectCarousel() {
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <CardHeader>
-                    <CardTitle>
-                      Website
-                      <Link href="https://github.com/kalebhirshfield/my-website">
-                        <Button variant="link" size="icon">
-                          <GithubIcon className="h-4 w-4" />
-                        </Button>
-                      </Link>
+                    <CardTitle className={kodeMono.className}>
+                      <Website />
                     </CardTitle>
                     <CardDescription>
-                      React Website Built With Next.js{" "}
+                      React website built with Next.js.
                     </CardDescription>
+                    <Link href="https://github.com/kalebhirshfield/my-website">
+                      <Button variant="link" size="icon">
+                        <GithubIcon className="h-4 w-4" />
+                      </Button>
+                    </Link>
                   </CardHeader>
                 </CardContent>
               </Card>

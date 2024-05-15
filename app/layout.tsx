@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/theme-toggle";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -23,18 +22,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth select-none">
       <head />
       <body className={fontSans.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="min-h-[90dvh]">
-            <div className="pt-8">
-              <ModeToggle />
-            </div>
-            {children}
-          </div>
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <div className="min-h-[90dvh]">{children}</div>
         </ThemeProvider>
       </body>
     </html>
