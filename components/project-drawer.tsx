@@ -11,9 +11,6 @@ import {
 import { ProjectCarousel } from "./project-carousel";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Kode_Mono } from "next/font/google";
-
-const kodeMono = Kode_Mono({ subsets: ["latin"] });
 
 export function ProjectDrawer() {
   return (
@@ -22,7 +19,7 @@ export function ProjectDrawer() {
         <DrawerTrigger className=" animate-bounce">👆</DrawerTrigger>
         <DrawerContent>
           <DrawerClose />
-          <DrawerHeader className={kodeMono.className}>
+          <DrawerHeader>
             <DrawerTitle className="flex justify-center">Projects</DrawerTitle>
             <DrawerDescription className="flex justify-center">
               A selection of projects I&apos;ve been working on...
