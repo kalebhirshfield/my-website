@@ -1,7 +1,7 @@
 "use client";
 
 import { useScramble } from "use-scramble";
-import { TypeAnimation } from "react-type-animation";
+import { FlipWords } from "./ui/flip-words";
 import { Kode_Mono } from "next/font/google";
 
 const kodeMono = Kode_Mono({ subsets: ["latin"] });
@@ -14,6 +14,8 @@ const Name = () => {
   return <p ref={ref} onMouseOver={replay} />;
 };
 
+const words = ["Computing", "Maths", "Physics"];
+
 export function Title() {
   return (
     <main className="text-center min-h-[30dvh] px-14 pb-14 scroll-m-20 text-4xl lg:text-6xl 2xl:text-8xl font-bold tracking-tight md:tracking-normal lg:tracking-wide xl:tracking-wider 2xl:tracking-widest first:mt-0 pt-20 transition-all">
@@ -22,12 +24,7 @@ export function Title() {
           <Name />
         </div>
         <div className="flex justify-center">
-          <TypeAnimation
-            sequence={["Computing", 1000, "Maths", 1000, "Physics", 1000]}
-            speed={50}
-            repeat={Infinity}
-            style={{ fontSize: "1.5rem" }}
-          />
+          <FlipWords words={words} />
         </div>
       </div>
     </main>
