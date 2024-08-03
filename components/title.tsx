@@ -1,20 +1,17 @@
 "use client";
 
 import { useScramble } from "use-scramble";
-import { FlipWords } from "./ui/flip-words";
 import { Kode_Mono } from "next/font/google";
 
 const kodeMono = Kode_Mono({ subsets: ["latin"] });
 
 const Name = () => {
   const { ref, replay } = useScramble({
-    text: "kaleb hirshfield",
+    text: "Kaleb Hirshfield",
     speed: 0.3,
   });
   return <p ref={ref} onMouseOver={replay} />;
 };
-
-const words = ["Computing", "Maths", "Physics"];
 
 export function Title() {
   return (
@@ -22,9 +19,6 @@ export function Title() {
       <div className={kodeMono.className}>
         <div className="flex justify-center mb-9">
           <Name />
-        </div>
-        <div className="flex justify-center">
-          <FlipWords words={words} />
         </div>
       </div>
     </main>
