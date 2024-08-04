@@ -17,7 +17,7 @@ export function TitleCard() {
       <CardHeader>
         <div className="flex flex-row">
           <Avatar>
-            <AvatarImage src="@/public/pfp.JPG" />
+            <AvatarImage src="https://media.licdn.com/dms/image/D4E03AQG7JqO9B8rRGg/profile-displayphoto-shrink_800_800/0/1722802429338?e=1728518400&v=beta&t=DjmCEH6qCXR9np4he7YEiy-OBYF_4NKWnXIwKUWhX2w" />
             <AvatarFallback>KH</AvatarFallback>
           </Avatar>
           <p className="text-3xl font-bold px-4">Kaleb Hirshfield</p>
