@@ -2,6 +2,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -13,14 +14,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export function TitleCard() {
   return (
-    <Card>
-      <CardHeader>
-        <div className="flex flex-row">
-          <Avatar>
-            <AvatarImage src="https://media.licdn.com/dms/image/D4E03AQG7JqO9B8rRGg/profile-displayphoto-shrink_800_800/0/1722802429338?e=1728518400&v=beta&t=DjmCEH6qCXR9np4he7YEiy-OBYF_4NKWnXIwKUWhX2w" />
-            <AvatarFallback>KH</AvatarFallback>
-          </Avatar>
-          <p className="text-3xl font-bold px-4">Kaleb Hirshfield</p>
+    <div className="w-1/3 min-w-[350px]">
+      <Card>
+        <CardHeader className="flex flex-row justify-between">
+          <div className="flex flex-row">
+            <Avatar>
+              <AvatarImage src="https://media.licdn.com/dms/image/D4E03AQG7JqO9B8rRGg/profile-displayphoto-shrink_800_800/0/1722802429338?e=1728518400&v=beta&t=DjmCEH6qCXR9np4he7YEiy-OBYF_4NKWnXIwKUWhX2w" />
+              <AvatarFallback>KH</AvatarFallback>
+            </Avatar>
+            <CardTitle className="text-3xl font-bold px-4">
+              Kaleb Hirshfield
+            </CardTitle>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <CardDescription className="text-center">
+            British Computer Science undergrad obsessed with motor racing.
+          </CardDescription>
+        </CardContent>
+        <CardFooter className="flex justify-end">
           <Button variant="ghost">
             <Link href="https://github.com/kalebhirshfield">
               <GithubIcon />
@@ -31,13 +43,8 @@ export function TitleCard() {
               <LinkedinIcon />
             </Link>
           </Button>
-        </div>
-      </CardHeader>
-      <CardContent>
-        <CardDescription>
-          British Computer Science undergrad obsessed with motor racing.
-        </CardDescription>
-      </CardContent>
-    </Card>
+        </CardFooter>
+      </Card>
+    </div>
   );
 }
