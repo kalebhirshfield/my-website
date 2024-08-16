@@ -18,7 +18,7 @@ export function TitleCard() {
       <CardHeader className="flex flex-row justify-between">
         <div className="flex flex-row">
           <Avatar>
-            <AvatarImage src="https://media.licdn.com/dms/image/D4E03AQG7JqO9B8rRGg/profile-displayphoto-shrink_800_800/0/1722802429338?e=1728518400&v=beta&t=DjmCEH6qCXR9np4he7YEiy-OBYF_4NKWnXIwKUWhX2w" />
+            <AvatarImage src="/avatar.jpg" />
             <AvatarFallback>KH</AvatarFallback>
           </Avatar>
           <CardTitle className="text-3xl font-bold px-4">
