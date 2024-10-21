@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { GithubIcon } from "lucide-react";
+import { GithubIcon, LinkIcon } from "lucide-react";
 
 export function StockaCard() {
   return (
@@ -14,9 +14,17 @@ export function StockaCard() {
       <Card>
         <CardHeader className="flex flex-row justify-between">
           <CardTitle className="text-3xl font-bold">Stocka</CardTitle>
-          <Link href="https://github.com/kalebhirshfield/stocka">
-            <GithubIcon />
-          </Link>
+          <div className="flex row">
+            <Link
+              href="https://github.com/kalebhirshfield/stocka"
+              className="pr-5"
+            >
+              <GithubIcon />
+            </Link>
+            <Link href="https://stocka.kalebhirshfield.com/">
+              <LinkIcon />
+            </Link>
+          </div>
         </CardHeader>
         <CardContent>
           <CardDescription>
