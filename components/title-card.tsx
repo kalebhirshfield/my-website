@@ -9,6 +9,7 @@ import {
 import { GithubIcon } from "lucide-react";
 import { LinkedinIcon } from "lucide-react";
 import { InstagramIcon } from "lucide-react";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
@@ -28,11 +29,17 @@ export function TitleCard() {
       </CardHeader>
       <CardContent>
         British Computer Science undergrad obsessed with motor racing.
-        <CardDescription>
-          Probably playing Forza or watching F1 atm...
-        </CardDescription>
+        <br />
+        Attending the University of York.
+        <CardDescription>Welwyn, Hertforshire</CardDescription>
       </CardContent>
-      <CardFooter className="flex justify-end">
+      <CardFooter className="flex justify-between">
+        <Link href="/cv.pdf">
+          <div className="flex">
+            <Download className="pr-2" />
+            CV
+          </div>
+        </Link>
         <Link href="https://github.com/kalebhirshfield">
           <GithubIcon />
         </Link>
