@@ -1,4 +1,5 @@
 import { TitleCard } from "@/components/title-card";
+import { WoahcabCard } from "@/components/woahcab-card";
 import { StockaCard } from "@/components/stocka-card";
 import { SolarXCard } from "@/components/solarx-card";
 import { GPTUICard } from "@/components/gptui-card";
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="w-1/5 min-w-[350px]">
         <TitleCard />
         <h2 className="text-2xl font-medium pt-8">🏗️ Under Construction...</h2>
+        <WoahcabCard />
         <StockaCard />
         <h2 className="text-2xl font-medium pt-8">🤖 Projects</h2>
         <SolarXCard />
