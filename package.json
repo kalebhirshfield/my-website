@@ -19,7 +19,7 @@
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.0.4",
     "framer-motion": "^11.3.28",
-    "lucide-react": "^0.292.0",
+    "lucide-react": "^0.577.0",
     "next": "16.0.8",
     "next-themes": "^0.2.1",
     "react": "19.2.1",
@@ -29,7 +29,7 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "use-scramble": "^2.2.15",
-    "vaul": "^0.9.1"
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@types/node": "^20",
