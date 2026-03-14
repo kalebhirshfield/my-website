@@ -44,7 +44,7 @@ export function TitleCard() {
           <GithubIcon />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/kaleb-hirshfield-a8a810270/"
+          href="https://www.linkedin.com/in/kalebhirshfield/"
           className="px-5"
         >
           <LinkedinIcon />
