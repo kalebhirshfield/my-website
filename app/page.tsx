@@ -9,7 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
-    <main className="h-[100dvh] snap-y snap-mandatory scroll-smooth overflow-y-auto px-4">
+    <main className="h-[100dvh] snap-y snap-mandatory scroll-smooth overflow-y-auto px-4 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
       <section
         aria-label="Profile"
         className="relative flex min-h-[100dvh] snap-start snap-always items-center justify-center pb-20"
@@ -35,18 +35,20 @@ export default function Home() {
       <section
         id="projects"
         aria-label="Projects"
-        className="mx-auto min-h-[100dvh] w-full max-w-3xl snap-start snap-always pt-8 pb-16"
+        className="mx-auto flex min-h-[100dvh] w-full max-w-3xl snap-start snap-always flex-col pt-8 pb-[calc(1.5rem+env(safe-area-inset-bottom))]"
       >
-        <h2 className="mb-5 text-2xl font-semibold tracking-tight text-foreground">
-          A few highlights
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <SkillDiffCard />
-          <WoahcabCard />
-          <SolarXCard />
-          <NEACard />
+        <div className="flex flex-1 flex-col justify-center">
+          <h2 className="mb-5 text-2xl font-semibold tracking-tight text-foreground">
+            A few highlights
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <SkillDiffCard />
+            <WoahcabCard />
+            <SolarXCard />
+            <NEACard />
+          </div>
         </div>
-        <footer className="flex items-center justify-center gap-2 pt-10 text-sm text-muted-foreground">
+        <footer className="mt-auto flex items-center justify-center gap-2 pt-8 text-sm text-muted-foreground">
           <span>Built with Next.js</span>
           <span aria-hidden="true">·</span>
           <Link

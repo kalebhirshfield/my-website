@@ -18,6 +18,9 @@ export function ThemeToggle() {
   const toggleTheme = () => {
     document.documentElement.classList.remove("warm", "cool");
     document.documentElement.classList.add(nextTheme);
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", nextTheme === "warm" ? "#11100e" : "#070e1e");
     setTheme(nextTheme);
   };
 
