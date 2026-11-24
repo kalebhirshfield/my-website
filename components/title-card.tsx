@@ -29,7 +29,7 @@ export function TitleCard() {
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="leading-relaxed">
-          I love cars, motorracing, and technology.
+          I love cars, motor racing, and tech.
         </p>
         <div className="flex flex-wrap gap-2">
           <CardDescription className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">

@@ -8,6 +8,21 @@ html {
   --cursor-y: 0;
 }
 
+html.warm {
+  background: hsl(24 24% 7%);
+}
+
+html.cool {
+  background: hsl(222 47% 7%);
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: hsl(var(--background));
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
 .cursor-glow {
   position: fixed;
   inset: 0;

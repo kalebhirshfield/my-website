@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="warm" suppressHydrationWarning>
       <head />
       <body className={fontSans.className}>
         <ThemeProvider
