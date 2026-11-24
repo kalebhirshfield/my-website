@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -12,6 +12,13 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Kaleb Hirshfield",
   description: "See what I'm up to.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#16130e",
 };
 
 export default function RootLayout({
@@ -30,7 +37,7 @@ export default function RootLayout({
           enableSystem={false}
         >
           <CursorGlow />
-          <div className="relative z-10 min-h-[90dvh]">{children}</div>
+          <div className="relative z-10 min-h-[90lvh]">{children}</div>
         </ThemeProvider>
       </body>
     </html>
