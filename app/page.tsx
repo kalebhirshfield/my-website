@@ -9,7 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   return (
-    <main className="h-[100dvh] snap-y snap-mandatory scroll-smooth overflow-y-auto px-4 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+    <main className="h-[100dvh] snap-y snap-mandatory scroll-smooth overflow-y-auto px-4">
       <section
         aria-label="Profile"
         className="relative flex min-h-[100dvh] snap-start snap-always items-center justify-center pb-20"
