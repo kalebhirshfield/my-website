@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -12,14 +12,6 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Kaleb Hirshfield",
   description: "See what I'm up to.",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "black-translucent",
-  },
-};
-
-export const viewport: Viewport = {
-  themeColor: "#11100e",
 };
 
 export default function RootLayout({

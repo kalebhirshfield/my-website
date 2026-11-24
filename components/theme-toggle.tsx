@@ -10,17 +10,6 @@ export function ThemeToggle() {
 
   useEffect(() => setMounted(true), []);
 
-  useEffect(() => {
-    if (!mounted) return;
-
-    const themeColor =
-      resolvedTheme === "cool" ? "#070e1e" : "#11100e";
-
-    document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
-      meta.setAttribute("content", themeColor);
-    });
-  }, [mounted, resolvedTheme]);
-
   if (!mounted) return null;
 
   const isWarm = resolvedTheme !== "cool";
@@ -29,21 +18,6 @@ export function ThemeToggle() {
   const toggleTheme = () => {
     document.documentElement.classList.remove("warm", "cool");
     document.documentElement.classList.add(nextTheme);
-    const themeColor = nextTheme === "warm" ? "#11100e" : "#070e1e";
-
-    document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => {
-      meta.setAttribute("content", themeColor);
-    });
-
-    let themeColorMeta = document.querySelector<HTMLMetaElement>(
-      'meta[name="theme-color"]'
-    );
-    if (!themeColorMeta) {
-      themeColorMeta = document.createElement("meta");
-      themeColorMeta.name = "theme-color";
-      document.head.appendChild(themeColorMeta);
-    }
-    themeColorMeta.setAttribute("content", themeColor);
     setTheme(nextTheme);
   };
 
