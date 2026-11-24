@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { CursorGlow } from "@/components/cursor-glow";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -22,8 +23,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={fontSans.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <div className="min-h-[90dvh]">{children}</div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="warm"
+          themes={["warm", "cool"]}
+          enableSystem={false}
+        >
+          <CursorGlow />
+          <div className="relative z-10 min-h-[90dvh]">{children}</div>
         </ThemeProvider>
       </body>
     </html>
